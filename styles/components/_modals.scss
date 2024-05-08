@@ -1,0 +1,333 @@
+@import '../abstract/base';
+@import '../abstract/variables';
+
+.product-modal {
+  border: none;
+  width: auto;
+  height: auto;
+  background-color: #cccccc15;
+  position: fixed;
+
+
+    
+}
+.product-modal_container{
+  background-color: white;
+  max-width: 700px;
+  width: 90%;
+  box-shadow: 0 15px 35px #2c3f5811;
+
+  padding: 0;
+  border: none;
+
+  position: absolute;
+  right: 24%;
+  top: 12%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+
+  .product-modal_header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color: $black-meteora;
+    color: #fff;
+  
+    .product-modal_icon {
+     color: $lemon-meteora;
+     margin: auto !important;
+    }
+  
+    .product-modal_title {
+      font-size: $paragraph-lead;
+      font-weight: $regular;
+      margin: auto;
+    }
+    
+    .product-modal_close {
+      cursor: pointer;
+      color: #888;
+      border: none;
+      background: transparent;
+      padding: 12px 0;
+      margin: auto;
+    }
+  }
+
+  .product-modal_body {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+
+    .product-modal_img {
+      height: 422px;
+      width: 100%;
+    }
+
+    #veste_jean {
+      background-image: url('../assets/mobile/imagens_cards/jaqueta_jeans.png');
+      background-size: cover;
+    }
+    #sac {
+      background-image: url('../assets/mobile/imagens_cards/bolsa.png');
+      background-size: cover;
+    }
+    #basket {
+      background-image: url('../assets/mobile/imagens_cards/tenis.png');
+      background-size: cover;
+    }
+    #pantalon {
+      background-image: url('../assets/mobile/imagens_cards/calça.png');
+      background-size: cover;
+    }
+    #t-shirt {
+      background-image: url('../assets/mobile/imagens_cards/camiseta.png');
+      background-size: cover;
+    }
+    #lunnetes {
+      background-image: url('../assets/mobile/imagens_cards/oculos.png');
+      background-size: cover;
+    }
+
+
+    .product-description {
+
+      width: 100%;
+      padding: 16px;
+      box-sizing: border-box;
+
+       .product-description_title {
+        font-size: $paragraph;
+        font-weight: $bold;
+        margin: 0;
+        padding: 16px 0;
+
+       }
+
+       .product-description_texte {
+        font-size: $paragraph-small;
+        font-weight: $regular;
+        border-bottom: 1px $black-meteora solid;
+        margin: 0;
+        padding: 16px 0;
+       }
+
+       .product-description_price{
+        font-size: $h5;
+        font-weight: $medium;
+        margin: 0;
+        padding: 16px 0;
+
+
+       }
+
+        .product-description_seller {
+          font-size: $paragraph-small;
+          font-weight: $regular;
+          color: $grey-meteora;
+          border-bottom: 1px $grey-meteora solid;
+          margin: 0;
+          padding: 16px 0;
+        }
+
+        .product-description_form {
+
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: baseline;
+          justify-content: space-between;
+          
+
+          .product-description_form_title{
+            font-size: $paragraph-small;
+            font-weight: $bold;
+            width: 100%;
+            margin: 8px 0;
+          }
+          .product-description_form_option{
+            font-size: $paragraph-small;
+            font-weight: $regular;
+            margin: 8px 8px 16px 0;
+          }
+        }
+
+    }
+
+    .add-to-chart-button {
+      width: 100%;
+      cursor: pointer;
+      border-radius: 0;
+      border: none;
+      padding: 16px;
+      background-color: #9353FF;
+      color: #fff;
+      margin-top: 16px;
+
+
+    }
+
+
+  }
+
+
+}
+
+@media screen and (min-width:768px) {
+  .product-modal_container{
+    max-width: 700px;
+    width: 90%;
+    box-shadow: 0 15px 35px #2c3f583d;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  
+  
+    .product-modal_header {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      
+      background-color: $black-meteora;
+      color: #fff;
+    
+      .product-modal_icon {
+       color: $lemon-meteora;
+       margin: auto !important;
+      }
+    
+      .product-modal_title {
+        font-size: $paragraph-lead;
+        font-weight: $regular;
+        margin: auto;
+      }
+      
+      .product-modal_close {
+        cursor: pointer;
+        color: #888;
+        border: none;
+        background: transparent;
+        padding: 12px 0;
+        margin: auto;
+      }
+    }
+  
+    .product-modal_body {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 16px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+  
+  
+      .product-modal_img {
+        height: 422px;
+        width: 50%;
+      }
+  
+      .product-description {
+  
+        width: 50%;
+        padding: 16px;
+        box-sizing: border-box;
+  
+         .product-description_title {
+          font-size: $paragraph;
+          font-weight: $bold;
+          margin: 0;
+          padding: 16px 0;
+  
+         }
+  
+         .product-description_texte {
+          font-size: $paragraph-small;
+          font-weight: $regular;
+          border-bottom: 1px $black-meteora solid;
+          margin: 0;
+          padding: 16px 0;
+         }
+  
+         .product-description_price{
+          font-size: $h5;
+          font-weight: $medium;
+          margin: 0;
+          padding: 16px 0;
+  
+  
+         }
+  
+          .product-description_seller {
+            font-size: $paragraph-small;
+            font-weight: $regular;
+            color: $grey-meteora;
+            border-bottom: 1px $grey-meteora solid;
+            margin: 0;
+            padding: 16px 0;
+          }
+  
+          .product-description_form {
+  
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-between;
+            
+  
+            .product-description_form_title{
+              font-size: $paragraph-small;
+              font-weight: $bold;
+              width: 100%;
+              margin: 8px 0;
+            }
+            .product-description_form_option{
+              font-size: $paragraph-small;
+              font-weight: $regular;
+              margin: 8px 8px 16px 0;
+            }
+          }
+  
+      }
+  
+      .add-to-chart-button {
+        width: 100%;
+        cursor: pointer;
+        border-radius: 0;
+        border: none;
+        padding: 16px;
+        background-color: #9353FF;
+        color: #fff;
+        margin-top: 16px;
+  
+  
+      }
+  
+  
+    }
+  
+  
+  }
+  
+  
+}

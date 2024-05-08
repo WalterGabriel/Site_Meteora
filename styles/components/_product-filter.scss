@@ -1,0 +1,231 @@
+@import '../abstract/base';
+@import '../abstract/variables';
+
+
+main {
+  .product-filter {
+    margin: 0;
+    max-width: none;
+    width: 100%;
+    text-align: center;
+
+    h3 {
+      font-size: $h3;
+      font-weight: $medium;
+      padding: 32px 0;
+      margin: 0;
+    }
+
+    .product-filter_container {
+      display: flex;
+      flex-wrap: wrap;
+
+      justify-content: space-evenly;
+      align-items: stretch;
+
+      .product-filter_card {
+        cursor: pointer;
+        margin: 12px 0;
+
+
+        .product-filter_img {
+          width: 146px;
+          height: 157px;
+        }
+
+        .sacs {
+          background-image: url('../assets/mobile/categorias/Categoria_bolsa.png');
+        }
+
+        .pulls {
+          background-image: url('../assets/mobile/categorias/Categoria_camiseta.png');
+        }
+
+        .chaussures {
+          background-image: url('../assets/mobile/categorias/Categoria_calçado.png');
+        }
+
+        .jeans {
+          background-image: url('../assets/mobile/categorias/Categoria_calças.png');
+        }
+
+        .t-shirts {
+          background-image: url('../assets/mobile/categorias/Categoria_camiseta.png');
+        }
+
+        .lunettes {
+          background-image: url('../assets/mobile/categorias/Categoria_oculos.png');
+        }
+
+        h6 {
+          font-size: $h6;
+          color: #ffffff;
+          background-color: $black-meteora;
+          font-weight: $medium;
+          margin: auto;
+          padding: $h6 0;
+          letter-spacing: .1em;
+        }
+
+
+
+      }
+
+    }
+
+  }
+
+
+  @media screen and (min-width:768px) and (max-width:1439px) {
+    
+  
+    .product-filter {
+      margin: 0;
+      max-width: none;
+      width: 100%;
+      text-align: center;
+
+      h3 {
+        font-size: $h3;
+        font-weight: $medium;
+        padding: 32px 0;
+        margin: 0;
+      }
+
+      .product-filter_container {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-evenly;
+        align-items: stretch;
+
+        .product-filter_card {
+          margin: 12px 0;
+
+
+          .product-filter_img {
+            width: 209px;
+            height: 157px;
+          }
+
+          .sacs {
+            background-image: url('../assets/tablet/categorias/Categoria_bolsas.png');
+          }
+
+          .pulls {
+            background-image: url('../assets/tablet/categorias/Categoria_casacos.png');
+          }
+
+          .chaussures {
+            background-image: url('../assets/tablet/categorias/Categoria_calçado.png');
+          }
+
+          .jeans {
+            background-image: url('../assets/tablet/categorias/Categoria_calça.png');
+          }
+
+          .t-shirts {
+            background-image: url('../assets/tablet/categorias/Categoria_camiseta.png');
+          }
+
+          .lunettes {
+            background-image: url('../assets/tablet/categorias/Categoria_oculos.png');
+          }
+
+          h6 {
+            font-size: $h6;
+            color: #ffffff;
+            background-color: $black-meteora;
+            font-weight: $medium;
+            margin: auto;
+            padding: $h6 0;
+            letter-spacing: .1em;
+          }
+
+
+
+        }
+
+      }
+
+
+    }
+  }
+
+
+  @media screen and (min-width:1440px){
+    
+  
+    .product-filter {
+      margin: auto;
+      max-width: 1440px;
+      width: 100%;
+      text-align: center;
+
+      h3 {
+        font-size: $h3;
+        font-weight: $medium;
+        padding: 32px 0;
+        margin: 0;
+      }
+
+      .product-filter_container {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-evenly;
+        align-items: stretch;
+
+        .product-filter_card {
+          margin: 12px 0;
+
+
+          .product-filter_img {
+            width: 160px;
+            height: 157px;
+          }
+
+          .sacs {
+            background-image: url('../assets/desktop/categorias/Categoria_bolsa.png');
+          }
+
+          .pulls {
+            background-image: url('../assets/desktop/categorias/Categoria_casaco.png');
+          }
+
+          .chaussures {
+            background-image: url('../assets/desktop/categorias/Categoria_calçado.png');
+          }
+
+          .jeans {
+            background-image: url('../assets/desktop/categorias/Categoria_calça.png');
+          }
+
+          .t-shirts {
+            background-image: url('../assets/desktop/categorias/Categoria_camiseta.png');
+          }
+
+          .lunettes {
+            background-image: url('../assets/desktop/categorias/Categoria_oculos.png');
+          }
+
+          h6 {
+            font-size: $h6;
+            color: #ffffff;
+            background-color: $black-meteora;
+            font-weight: $medium;
+            margin: auto;
+            padding: $h6 0;
+            letter-spacing: .1em;
+          }
+
+
+
+        }
+
+      }
+
+
+    }
+  }
+}

@@ -1,0 +1,206 @@
+@import '../abstract/base';
+@import '../abstract/variables';
+
+main{
+  .newsletter {
+   
+    .newsletter_container {
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+      
+
+      border: 1px solid $black-meteora;
+      margin: 32px;
+      text-align: left;
+      box-sizing: border-box;
+
+      p {
+        font-size: $paragraph;
+        line-height: 1.5em;
+        margin: auto auto 16px auto;
+      }
+      
+      .newsletter_sign {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        margin: 0;
+        
+
+
+        input {
+          padding: 16px;
+          border-radius: 0;
+          border: 1px solid $black-meteora;
+          width: 100%;
+
+          margin-bottom: 8px;
+        }
+
+        button {
+          
+          cursor: pointer;
+          width: 100%;
+          border-radius: 0;
+          border: none;
+          padding: 16px;
+          background-color: $violet-meteora;
+          color: #fff;
+
+          &:hover, &:active {
+
+            background-color: $lemon-meteora;
+            color: $black-meteora;
+          }
+
+        }
+      }
+
+
+
+
+    }
+  
+  
+  }
+
+
+
+  @media screen and (min-width:768px) and (max-width:1439px) {
+    
+    .newsletter {
+   
+      .newsletter_container {
+        display: flex;
+        flex-direction: column;
+        padding: 32px 128px;
+        
+  
+        border: 1px solid $black-meteora;
+        margin: 32px;
+        text-align: left;
+        box-sizing: border-box;
+  
+        p {
+          font-size: $paragraph;
+          line-height: 1.5em;
+          margin: auto auto 16px auto;
+        }
+        
+        .newsletter_sign {
+          display: flex;
+          flex-wrap: wrap;
+          box-sizing: border-box;
+          margin: 0;
+          
+  
+  
+          input {
+            padding: 16px;
+            border-radius: 0;
+            border: 1px solid $black-meteora;
+            width: 50%;
+  
+            margin-bottom: 0px;
+          }
+  
+          button {
+            
+            cursor: pointer;
+            width: 40%;
+            border-radius: 0;
+            border: none;
+            padding: 16px;
+            background-color: $violet-meteora;
+            color: #fff;
+  
+            &:hover, &:active {
+  
+              background-color: $lemon-meteora;
+              color: $black-meteora;
+            }
+  
+          }
+        }
+  
+  
+  
+  
+      }
+    
+    
+    }
+
+  }
+
+
+  @media screen and (min-width:1440px) {
+    
+    .newsletter {
+      display: flex;
+      justify-content: center;
+      .newsletter_container {
+        display: flex;
+        flex-direction: column;
+        padding: 32px 64px;
+        max-width: 1440px;
+        
+  
+        border: 1px solid $black-meteora;
+        margin: 32px 384px;
+        text-align: left;
+        box-sizing: border-box;
+  
+        p {
+          font-size: $paragraph-lead;
+          line-height: 1.5em;
+          margin: auto auto 32px auto;
+        }
+        
+        .newsletter_sign {
+          display: flex;
+          flex-wrap: wrap;
+          box-sizing: border-box;
+          margin: 0;
+          
+  
+  
+          input {
+            padding: 16px;
+            border-radius: 0;
+            border: 1px solid $black-meteora;
+            width: 50%;
+  
+            margin-bottom: 0px;
+          }
+  
+          button {
+            
+            cursor: pointer;
+            width: 40%;
+            border-radius: 0;
+            border: none;
+            padding: 16px;
+            background-color: $violet-meteora;
+            color: #fff;
+  
+            &:hover, &:active {
+  
+              background-color: $lemon-meteora;
+              color: $black-meteora;
+            }
+  
+          }
+        }
+  
+  
+  
+  
+      }
+    
+    
+    }
+
+  }
+}

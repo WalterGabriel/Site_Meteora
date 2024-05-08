@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="./styles/normalize.css">
+<link rel="stylesheet" href="./styles/styles.css">
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+
+<link rel="icon" type="image/svg+xml" href="assets/Favicon-svg.svg">
+  <title>Meteora</title>
+</head>
+
+
+<body>
+  <header>
+    
+    <a class="header_logo" href="#"><img src="assets/Desktop/Logo desktop.png" alt="Logo Meteora"></a>
+
+
+    <nav class="header_nav">
+      <ul class="header_hamburguer-menu_list">
+        <li class="header_hamburguer-menu_item"><a href="./index.html" class="header_hamburguer-menu_link">Accueil</a></li>
+        <li class="header_hamburguer-menu_item"><a href="#" class="header_hamburguer-menu_link">Nos Magasins</a></li>
+        <li class="header_hamburguer-menu_item"><a href="#" class="header_hamburguer-menu_link">Nouveautés</a></li>
+        <li class="header_hamburguer-menu_item"><a href="#" class="header_hamburguer-menu_link">Promos</a></li>
+      </ul>
+    </nav>
+
+    <div class="header_search-tool_container">
+      <input type="text" placeholder="Avec quels habits veux-tu impacter le monde ?">
+      <button class="material-icons-sharp">search</button>
+    </div>
+      
+    <button class="header_hamburguer-menu_button material-icons-sharp">menu</button>
+    
+  </header>
+  <main>
+
+    <section class="banner">
+
+        <!-- Slider main container -->
+      <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+
+
+        <div class="swiper-slide">
+          <div class="slide_description">
+          </div>
+          <div class="slide_img-bg slide--1"></div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide_description right">
+          <h4>Collection Atemporel</h4>
+          <p>Style et qualité pour durer.</p>
+          </div>
+          <div class="slide_img-bg slide--2"></div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide_description left">
+          <h4>Collection Atemporel</h4>
+          <p>Fort impact visuel, <br>faible impact environnemental.</p>
+          </div>
+          <div class="slide_img-bg slide--3"></div>
+        </div>
+
+
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+    <nav class="product-filter">
+
+
+      <h3>Cherche par catégorie :</h3>
+      <div class="product-filter_container">
+
+        <div class="product-filter_card">
+          <div class="product-filter_img sacs">
+
+          </div>
+          <h6>Sacs</h6>
+        </div>
+        
+        <div class="product-filter_card">
+          <div class="product-filter_img pulls">
+            
+          </div>
+          <h6>Vestes</h6>
+        </div>
+
+        <div class="product-filter_card">
+          <div class="product-filter_img chaussures">
+            
+          </div>
+          <h6>Chaussures</h6>
+        </div>
+
+        <div class="product-filter_card">
+          <div class="product-filter_img jeans">
+            
+          </div>
+          <h6>Pantalons</h6>
+        </div>
+
+        <div class="product-filter_card">
+          <div class="product-filter_img t-shirts">
+            
+          </div>
+          <h6>T-shirts</h6>
+        </div>
+
+        <div class="product-filter_card">
+          <div class="product-filter_img lunettes">
+            
+          </div>
+          <h6>Lunettes</h6>
+        </div>
+
+      </div>
+
+    </nav>
+
+    <section class="product-gallery">
+
+
+      <h3>Les produits qui cartonnent :</h3>
+      <div class="product-gallery_container">
+
+        <div class="product-gallery_card">
+          <div class="product-gallery_img sacs">
+          </div>
+          <div class="product-gallery_description">
+            <h6>Sac</h6>
+            <p class="product-gallery_text"> Sac en cuir synthétique camel de haute durabilité. Idéal pour vous accompagner toute votre vie!.</p>
+            <p id="modal-button_sacs" class="product-gallery_price">60,00€</p>
+            <button class="modal_button sac" >Voir plus</button>
+          </div>
+        </div>
+
+        <div class="product-gallery_card">
+          <div class="product-gallery_img pulls">
+          </div>
+          <div class="product-gallery_description">
+            <h6>Veste</h6>
+            <p class="product-gallery_text">Modèle oversize unisexe avec un col en daim. Intemporel et authentique !</p>
+            <p class="product-gallery_price">75,00€</p>
+            <button class="modal_button veste-jean" >Voir plus</button>
+          </div>
+        </div>
+        
+        <div class="product-gallery_card">
+          <div class="product-gallery_img chaussures">
+          </div>
+          <div class="product-gallery_description">
+            <h6>Basket</h6>
+            <p class="product-gallery_text">    Sneakers décontractées avec une semelle plus épaisse et une silhouette robuste. Modèle unisexe.</p>
+            <p class="product-gallery_price">125,00€</p>
+            <button  class="modal_button basket" >Voir plus</button>
+          </div>
+        </div>
+
+        <div class="product-gallery_card">
+          <div class="product-gallery_img jeans">
+          </div>
+          <div class="product-gallery_description">
+            <h6>Pantalon</h6>
+            <p class="product-gallery_text">    Pantalon taille large en lin de qualité supérieure. Un vêtement pour la vie !</p>
+            <p class="product-gallery_price">90,00€</p>
+            <button  class="modal_button pantalon" >Voir plus</button>
+          </div>
+        </div>
+
+        <div class="product-gallery_card">
+          <div class="product-gallery_img t-shirts">
+          </div>
+          <div class="product-gallery_description">
+            <h6>T-shirt</h6>
+            <p class="product-gallery_text"> Disponible en différentes tailles et couleurs. Fabriqué à partir de 100% de coton, idéal pour l'été. Coupe unisexe.</p>
+            <p class="product-gallery_price">35,00€</p>
+            <button  class="modal_button t-shirt" >Voir plus</button>
+          </div>
+        </div>
+
+        <div class="product-gallery_card">
+          <div class="product-gallery_img lunettes">
+          </div>
+          <div class="product-gallery_description">
+            <h6>Lunnetes</h6>
+            <p class="product-gallery_text"> Monture en graphite avec des verres arrondis. Un choix sûr !</p>
+            <p class="product-gallery_price">60,00€</p>
+            <button  class="modal_button lunnetes" >Voir plus</button>
+          </div>
+        </div>
+        
+      </div>
+
+    </section>
+
+    <section class="benefits-bar">
+      <h4>Découvre toutes nos facilités</h4>
+      <div class="benefits-bar_container">
+        <div class="benefits-bar_point">
+          <div class="benefits-bar_icon diamond"></div>
+
+          <div class="benefits-bar_description">
+            <h6>Paye en ligne</h6>
+            <p>Bénéficie de 5% de réduction sur les paiements en ligne</p>
+          </div>
+        </div>
+
+        <div class="benefits-bar_point">
+          <div class="benefits-bar_icon arrows"></div>
+
+          <div class="benefits-bar_description">
+            <h6>Échange gratuit</h6>
+            <p>N'hésite pas à échanger dans les 30 jours</p>
+          </div>
+        </div>
+
+        <div class="benefits-bar_point">
+          <div class="benefits-bar_icon flower"></div>
+          <div class="benefits-bar_description">
+            <h6>Durabilité</h6>
+            <p>Mode responsable qui respecte l'environnement</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter_container">
+        <p>
+          Veux-tu recevoir nos actualités, nos promotions exclusives et 10% de réduction sur ton premier achat ? Enregistre!
+        </p>
+
+        <div class="newsletter_sign">
+          <input type="email" placeholder="Saisie ton email">
+          <button>Envoyer</button>
+        </div>
+      </div>
+
+
+    </section>
+
+    <footer>
+      <p>
+      2023 © Maquettage : Cours Alura 
+      <br>
+      Développement : Walter DE LIMA
+      <br>
+      Projet fictif non commercial.
+      </p>
+    </footer>
+
+
+   
+
+
+
+
+  </main>
+
+
+<!-- MODALS -->
+<dialog id="modal_veste-jean" class="product-modal">
+  <div class="product-modal_container">
+    <div class="product-modal_header">
+      <p class="product-modal_icon material-icons-outlined">check_circle</p>
+      <h4 class="product-modal_title">Détails du produit</h4>
+      <button class="product-modal_close material-icons-sharp" id="modal_close_veste-jean">close</button>
+    </div>
+  
+    <div class="product-modal_body">
+      <div class="product-modal_img" id="veste_jean">
+        
+        
+      </div>
+      <div class="product-description">
+        <h6 class="product-description_title">Veste en jean</h6>
+        <p class="product-description_texte">Modèle unisexe oversize avec un col en daim. Intemporel et authentique! </p>
+        <p class="product-description_price">€ 75,00</p>
+        <p class="product-description_seller">Vendu et expédié par Riachuelo</p>
+  
+        <form method="dialog" class="product-description_form">
+          <label class="product-description_form_title" for="color">Couleur</label>
+          <div class="product-description_form_option">
+          <input type="radio" id="noire" name="color" value="Noire">
+          <label for="noire">Noire</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input  type="radio" id="bleue" name="color" value="Bleu">
+          <label class="product-description_form_option"  for="bleu">Bleue</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="grise" name="color" value="Grise">
+          <label class="product-description_form_option"  for="grise">Grise</label>
+          </div>
+  
+          <label class="product-description_form_title" for="color">Taille</label>
+          <div>
+          <input type="radio" id="S" name="taille" value="S">
+          <label  class="product-description_form_option" for="S">S</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="M" name="taille" value="M">
+          <label class="product-description_form_option"  for="M">M</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="G" name="taille" value="G">
+          <label class="product-description_form_option"  for="G">G</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="XG" name="taille" value="XG">
+          <label class="product-description_form_option"  for="XG">XG</label>
+          </div>
+          <div>
+          <input type="radio" id="XG" name="taille" value="XG">
+          <label class="product-description_form_option" for="XG">XXG</label>
+          </div>
+          
+  
+   
+  
+          <input class="add-to-chart-button" type="submit" value="Ajouter aux achats">
+          </input>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  
+  </div>
+  
+  </dialog>
+<dialog id="modal_sac" class="product-modal">
+  <div class="product-modal_container">
+    <div class="product-modal_header">
+      <p class="product-modal_icon material-icons-outlined">check_circle</p>
+      <h4 class="product-modal_title">Détails du produit</h4>
+      <button class="product-modal_close material-icons-sharp" id="modal_close_sac">close</button>
+    </div>
+  
+    <div class="product-modal_body">
+      <div class="product-modal_img" id="sac">
+        
+        
+      </div>
+      <div class="product-description">
+        <h6 class="product-description_title">Veste en jean</h6>
+        <p class="product-description_texte">Modèle unisexe oversize avec un col en daim. Intemporel et authentique! </p>
+        <p class="product-description_price">€ 75,00</p>
+        <p class="product-description_seller">Vendu et expédié par Riachuelo</p>
+  
+        <form method="dialog" class="product-description_form">
+          <label class="product-description_form_title" for="color">Couleur</label>
+          <div class="product-description_form_option">
+          <input type="radio" id="noire" name="color" value="Noire">
+          <label for="noire">Noire</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input  type="radio" id="bleue" name="color" value="Bleu">
+          <label class="product-description_form_option"  for="bleu">Bleue</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="grise" name="color" value="Grise">
+          <label class="product-description_form_option"  for="grise">Grise</label>
+          </div>
+  
+          <label class="product-description_form_title" for="color">Taille</label>
+          <div>
+          <input type="radio" id="S" name="taille" value="S">
+          <label  class="product-description_form_option" for="S">S</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="M" name="taille" value="M">
+          <label class="product-description_form_option"  for="M">M</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="G" name="taille" value="G">
+          <label class="product-description_form_option"  for="G">G</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="XG" name="taille" value="XG">
+          <label class="product-description_form_option"  for="XG">XG</label>
+          </div>
+          <div>
+          <input type="radio" id="XG" name="taille" value="XG">
+          <label class="product-description_form_option" for="XG">XXG</label>
+          </div>
+          
+  
+   
+  
+          <input class="add-to-chart-button" type="submit" value="Ajouter aux achats">
+          </input>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  
+  </div>
+  
+  </dialog>
+  
+<dialog id="modal_basket" class="product-modal">
+  <div class="product-modal_container">
+    <div class="product-modal_header">
+      <p class="product-modal_icon material-icons-outlined">check_circle</p>
+      <h4 class="product-modal_title">Détails du produit</h4>
+      <button class="product-modal_close material-icons-sharp" id="modal_close_basket">close</button>
+    </div>
+  
+    <div class="product-modal_body">
+      <div class="product-modal_img" id="basket">
+        
+        
+      </div>
+      <div class="product-description">
+        <h6 class="product-description_title">Veste en jean</h6>
+        <p class="product-description_texte">Modèle unisexe oversize avec un col en daim. Intemporel et authentique! </p>
+        <p class="product-description_price">€ 75,00</p>
+        <p class="product-description_seller">Vendu et expédié par Riachuelo</p>
+  
+        <form method="dialog" class="product-description_form">
+          <label class="product-description_form_title" for="color">Couleur</label>
+          <div class="product-description_form_option">
+          <input type="radio" id="noire" name="color" value="Noire">
+          <label for="noire">Noire</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input  type="radio" id="bleue" name="color" value="Bleu">
+          <label class="product-description_form_option"  for="bleu">Bleue</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="grise" name="color" value="Grise">
+          <label class="product-description_form_option"  for="grise">Grise</label>
+          </div>
+  
+          <label class="product-description_form_title" for="color">Taille</label>
+          <div>
+          <input type="radio" id="S" name="taille" value="S">
+          <label  class="product-description_form_option" for="S">S</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="M" name="taille" value="M">
+          <label class="product-description_form_option"  for="M">M</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="G" name="taille" value="G">
+          <label class="product-description_form_option"  for="G">G</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="XG" name="taille" value="XG">
+          <label class="product-description_form_option"  for="XG">XG</label>
+          </div>
+          <div>
+          <input type="radio" id="XG" name="taille" value="XG">
+          <label class="product-description_form_option" for="XG">XXG</label>
+          </div>
+          
+  
+   
+  
+          <input class="add-to-chart-button" type="submit" value="Ajouter aux achats">
+          </input>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  
+  </div>
+  
+  </dialog>
+<dialog id="modal_pantalon" class="product-modal">
+  <div class="product-modal_container">
+    <div class="product-modal_header">
+      <p class="product-modal_icon material-icons-outlined">check_circle</p>
+      <h4 class="product-modal_title">Détails du produit</h4>
+      <button class="product-modal_close material-icons-sharp" id="modal_close_pantalon">close</button>
+    </div>
+  
+    <div class="product-modal_body">
+      <div class="product-modal_img" id="pantalon">
+        
+        
+      </div>
+      <div class="product-description">
+        <h6 class="product-description_title">Veste en jean</h6>
+        <p class="product-description_texte">Modèle unisexe oversize avec un col en daim. Intemporel et authentique! </p>
+        <p class="product-description_price">€ 75,00</p>
+        <p class="product-description_seller">Vendu et expédié par Riachuelo</p>
+  
+        <form method="dialog" class="product-description_form">
+          <label class="product-description_form_title" for="color">Couleur</label>
+          <div class="product-description_form_option">
+          <input type="radio" id="noire" name="color" value="Noire">
+          <label for="noire">Noire</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input  type="radio" id="bleue" name="color" value="Bleu">
+          <label class="product-description_form_option"  for="bleu">Bleue</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="grise" name="color" value="Grise">
+          <label class="product-description_form_option"  for="grise">Grise</label>
+          </div>
+  
+          <label class="product-description_form_title" for="color">Taille</label>
+          <div>
+          <input type="radio" id="S" name="taille" value="S">
+          <label  class="product-description_form_option" for="S">S</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="M" name="taille" value="M">
+          <label class="product-description_form_option"  for="M">M</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="G" name="taille" value="G">
+          <label class="product-description_form_option"  for="G">G</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="XG" name="taille" value="XG">
+          <label class="product-description_form_option"  for="XG">XG</label>
+          </div>
+          <div>
+          <input type="radio" id="XG" name="taille" value="XG">
+          <label class="product-description_form_option" for="XG">XXG</label>
+          </div>
+          
+  
+   
+  
+          <input class="add-to-chart-button" type="submit" value="Ajouter aux achats">
+          </input>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  
+  </div>
+  
+  </dialog>
+<dialog id="modal_t-shirt" class="product-modal">
+  <div class="product-modal_container">
+    <div class="product-modal_header">
+      <p class="product-modal_icon material-icons-outlined">check_circle</p>
+      <h4 class="product-modal_title">Détails du produit</h4>
+      <button class="product-modal_close material-icons-sharp" id="modal_close_t-shirt">close</button>
+    </div>
+  
+    <div class="product-modal_body">
+      <div class="product-modal_img" id="t-shirt">
+        
+        
+      </div>
+      <div class="product-description">
+        <h6 class="product-description_title">Veste en jean</h6>
+        <p class="product-description_texte">Modèle unisexe oversize avec un col en daim. Intemporel et authentique! </p>
+        <p class="product-description_price">€ 75,00</p>
+        <p class="product-description_seller">Vendu et expédié par Riachuelo</p>
+  
+        <form method="dialog" class="product-description_form">
+          <label class="product-description_form_title" for="color">Couleur</label>
+          <div class="product-description_form_option">
+          <input type="radio" id="noire" name="color" value="Noire">
+          <label for="noire">Noire</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input  type="radio" id="bleue" name="color" value="Bleu">
+          <label class="product-description_form_option"  for="bleu">Bleue</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="grise" name="color" value="Grise">
+          <label class="product-description_form_option"  for="grise">Grise</label>
+          </div>
+  
+          <label class="product-description_form_title" for="color">Taille</label>
+          <div>
+          <input type="radio" id="S" name="taille" value="S">
+          <label  class="product-description_form_option" for="S">S</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="M" name="taille" value="M">
+          <label class="product-description_form_option"  for="M">M</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="G" name="taille" value="G">
+          <label class="product-description_form_option"  for="G">G</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="XG" name="taille" value="XG">
+          <label class="product-description_form_option"  for="XG">XG</label>
+          </div>
+          <div>
+          <input type="radio" id="XG" name="taille" value="XG">
+          <label class="product-description_form_option" for="XG">XXG</label>
+          </div>
+          
+  
+   
+  
+          <input class="add-to-chart-button" type="submit" value="Ajouter aux achats">
+          </input>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  
+  </div>
+  
+  </dialog>
+<dialog id="modal_lunnetes" class="product-modal">
+  <div class="product-modal_container">
+    <div class="product-modal_header">
+      <p class="product-modal_icon material-icons-outlined">check_circle</p>
+      <h4 class="product-modal_title">Détails du produit</h4>
+      <button class="product-modal_close material-icons-sharp" id="modal_close_lunnetes">close</button>
+    </div>
+  
+    <div class="product-modal_body">
+      <div class="product-modal_img" id="lunnetes">
+        
+        
+      </div>
+      <div class="product-description">
+        <h6 class="product-description_title">Veste en jean</h6>
+        <p class="product-description_texte">Modèle unisexe oversize avec un col en daim. Intemporel et authentique! </p>
+        <p class="product-description_price">€ 75,00</p>
+        <p class="product-description_seller">Vendu et expédié par Riachuelo</p>
+  
+        <form method="dialog" class="product-description_form">
+          <label class="product-description_form_title" for="color">Couleur</label>
+          <div class="product-description_form_option">
+          <input type="radio" id="noire" name="color" value="Noire">
+          <label for="noire">Noire</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input  type="radio" id="bleue" name="color" value="Bleu">
+          <label class="product-description_form_option"  for="bleu">Bleue</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="grise" name="color" value="Grise">
+          <label class="product-description_form_option"  for="grise">Grise</label>
+          </div>
+  
+          <label class="product-description_form_title" for="color">Taille</label>
+          <div>
+          <input type="radio" id="S" name="taille" value="S">
+          <label  class="product-description_form_option" for="S">S</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="M" name="taille" value="M">
+          <label class="product-description_form_option"  for="M">M</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="G" name="taille" value="G">
+          <label class="product-description_form_option"  for="G">G</label>
+          </div>
+    
+          <div class="product-description_form_option">
+          <input type="radio" id="XG" name="taille" value="XG">
+          <label class="product-description_form_option"  for="XG">XG</label>
+          </div>
+          <div>
+          <input type="radio" id="XG" name="taille" value="XG">
+          <label class="product-description_form_option" for="XG">XXG</label>
+          </div>
+          
+  
+   
+  
+          <input class="add-to-chart-button" type="submit" value="Ajouter aux achats">
+          </input>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  
+  </div>
+  
+  </dialog>
+
+
+
+<script src="./js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./js/swiper.js"></script>
+
+
+
+
+
+</body>
+</html>

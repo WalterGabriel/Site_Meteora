@@ -1,0 +1,23 @@
+/*Toute la structucte du site est dévelloppée en mobile first.
+Soit 375 pixels de départ. Ensuite les média queries sont configurée de tel manière :
+min-width = 768px pour les tablets
+min-width = 1440px pour les desktops*/
+
+
+//Essentials
+@import './abstract/base';
+@import './abstract/variables';
+
+//Structure
+@import './components/header';
+@import './components/footer';
+
+//Components
+@import './components/banner';
+@import './components/benefits-bar';
+@import './components/newsletter';
+@import './components/product-filter';
+@import './components/product-gallery';
+@import './components/modals';
+
+

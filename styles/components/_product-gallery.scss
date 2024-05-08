@@ -1,0 +1,334 @@
+@import '../abstract/base';
+@import '../abstract/variables';
+
+main {
+  .product-gallery {
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    margin: 0;
+    max-width: none;
+    width: 100%;
+    text-align: left;
+   
+
+    h3 {
+      font-size: $h3;
+      font-weight: $medium;
+      padding: 32px 32px 8px 32px;
+    }
+
+    .product-gallery_container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+
+      .product-gallery_card {
+        
+
+        margin: 12px 32px;
+        width: 323px;
+        
+
+
+        .product-gallery_img {
+          width: 323px;
+          height: 422px;
+          background-size: cover;
+        }
+
+        .sacs {
+          background-image: url('../assets/mobile/imagens_cards/bolsa.png');
+        }
+
+        .pulls {
+          background-image: url('../assets/mobile/imagens_cards/jaqueta_jeans.png');
+        }
+
+        .chaussures {
+          background-image: url('../assets/mobile/imagens_cards/tenis.png');
+        }
+
+        .jeans {
+          background-image: url('../assets/mobile/imagens_cards/calça.png');
+        }
+
+        .t-shirts {
+          background-image: url('../assets/mobile/imagens_cards/tenis.png');
+        }
+
+        .lunettes {
+          background-image: url('../assets/mobile/imagens_cards/oculos.png');
+        }
+
+        .product-gallery_description {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+
+          
+          text-align: left;
+          padding: 16px 32px;
+          border: 1px solid #00000055;
+          box-sizing: content-box;
+
+          h6 {
+            font-size: $h6;
+            color: $black-meteora;
+            background-color: #fff;
+            font-weight: $bold;
+            letter-spacing: .1em;
+            margin: 0;
+          }
+
+          .product-gallery_text {
+            font-size: $paragraph-small;
+            line-height: 1.5em;
+        
+          }
+
+          .product-gallery_price {
+            font-weight: $bold;
+            margin: 0 0 16px 0;
+          }
+        }
+
+
+
+
+      }
+
+    }
+
+  }
+
+
+  @media screen and (min-width: 768px) and (max-width:1439px) {
+
+    .product-gallery {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+  
+      margin: 0;
+      max-width: none;
+      width: 100%;
+      text-align: left;
+     
+  
+      h3 {
+        font-size: $h3;
+        font-weight: $medium;
+        padding: 32px 32px 8px 32px;
+      }
+  
+      .product-gallery_container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+  
+  
+        .product-gallery_card {
+          width: 330px;
+          margin: 12px 32px;
+          
+  
+  
+          .product-gallery_img {
+            height: 389px;
+            background-size: cover;
+          }
+  
+          .sacs {
+            background-image: url('../assets/tablet/imagens_cards/bolsa.png');
+          }
+  
+          .pulls {
+            background-image: url('../assets/tablet/imagens_cards/jaqueta_jeans.png');
+          }
+  
+          .chaussures {
+            background-image: url('../assets/tablet/imagens_cards/tenis.png');
+          }
+  
+          .jeans {
+            background-image: url('../assets/tablet/imagens_cards/calça.png');
+          }
+  
+          .t-shirts {
+            background-image: url('../assets/tablet/imagens_cards/camiseta.png');
+          }
+  
+          .lunettes {
+            background-image: url('../assets/tablet/imagens_cards/oculos.png');
+          }
+  
+          .product-gallery_description {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 213px;
+  
+  
+            text-align: left;
+            padding: 16px 32px;
+            border: 1px solid #00000055;
+            box-sizing: content-box;
+  
+            h6 {
+              font-size: $h6;
+              color: $black-meteora;
+              background-color: #fff;
+              font-weight: $bold;
+              letter-spacing: .1em;
+              margin: 0;
+            }
+  
+            .product-gallery_text {
+              font-size: $paragraph-small;
+              line-height: 1.5em;
+          
+            }
+  
+            .product-gallery_price {
+              font-weight: $bold;
+              margin: 0 0 16px 0;
+            }
+          }
+  
+  
+  
+  
+        }
+  
+      }
+  
+    }
+    
+  }
+
+  @media screen and (min-width:1440px) {
+
+    .product-gallery {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+  
+      margin: auto;
+      max-width: 1440px;
+      width: 100%;
+      text-align: left;
+     
+  
+      h3 {
+        font-size: $h3;
+        font-weight: $medium;
+        padding: 32px 32px 8px 32px;
+      }
+  
+      .product-gallery_container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+  
+  
+        .product-gallery_card {
+          width: 350px;
+          margin: 12px 32px;
+          
+  
+  
+          .product-gallery_img {
+            height: 422px;
+            width: 350px;
+            background-size: cover;
+          }
+  
+          .sacs {
+            background-image: url('../assets/desktop/imagens_cards/bolsa.png');
+          }
+  
+          .pulls {
+            background-image: url('../assets/desktop/imagens_cards/jaqueta.png');
+          }
+  
+          .chaussures {
+            background-image: url('../assets/desktop/imagens_cards/tenis.png');
+          }
+  
+          .jeans {
+            background-image: url('../assets/desktop/imagens_cards/calça.png');
+          }
+  
+          .t-shirts {
+            background-image: url('../assets/desktop/imagens_cards/camiseta.png');
+          }
+  
+          .lunettes {
+            background-image: url('../assets/desktop/imagens_cards/oculos.png');
+          }
+  
+          .product-gallery_description {
+            display: flex;
+            flex-direction: column;
+            height: 193px;
+
+  
+            text-align: left;
+            padding: 16px 32px;
+            border: 1px solid #00000055;
+            box-sizing: content-box;
+  
+            h6 {
+              font-size: $h6;
+              color: $black-meteora;
+              background-color: #fff;
+              font-weight: $bold;
+              letter-spacing: .1em;
+              margin: 0;
+            }
+  
+            .product-gallery_text {
+              font-size: $paragraph-small;
+              line-height: 1.5em;
+          
+            }
+  
+            .product-gallery_price {
+              font-weight: $bold;
+              margin: 0 0 16px 0;
+            }
+          }
+  
+  
+  
+  
+        }
+  
+      }
+  
+    }
+    
+  }
+}

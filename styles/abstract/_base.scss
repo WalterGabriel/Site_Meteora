@@ -1,0 +1,32 @@
+@import '../abstract/variables';
+
+:root {
+
+  font-family: $main-type;
+  font-weight: $regular;
+
+}
+
+.material-icons-sharp {
+  font-size: 36px !important;
+}
+
+.material-icons-outlined {
+  font-size: 36px !important;
+}
+
+.modal_button {
+  cursor: pointer;
+  background-color: $violet-meteora;
+  color: #fff;
+  width: 100%;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  text-align: center;
+  border: none;
+
+  &:hover {
+    background-color: $lemon-meteora;
+    color: $black-meteora;
+  }
+}

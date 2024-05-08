@@ -1,0 +1,246 @@
+
+main {
+
+  .benefits-bar {
+    color: #fff;
+    background-color: $black-meteora;
+    padding: 32px;
+
+
+    display: block;
+
+    h4 {
+      font-size: $h4;
+  
+      font-weight: $medium;
+      padding: 0 0 8px 0;
+    }
+    .benefits-bar_container {
+      display: flex;
+      flex-direction: column;
+      .benefits-bar_point {
+        margin: 16px 0;
+        width: 100%;
+
+        display: flex;
+        
+        align-items: center;
+
+        .benefits-bar_icon{
+          width: 56px;
+          height: 56px;
+          margin: auto 16px ;
+
+
+        }
+
+        .benefits-bar_description {
+          margin: 16px auto;
+          width: 70%;
+        }
+
+        .diamond {
+          background-image: url('../assets/mobile/icones/x-diamond.png');
+        }
+
+        .arrows {
+          background-image: url('../assets/mobile/icones/arrow-repeat.png')
+        }
+
+        .flower {
+          background-image: url('../assets/mobile/icones/flower1.png')
+        }
+
+
+
+        h6, p {
+          margin: 0;
+        }
+
+        h6 {
+          font-size: $h6;
+          font-weight: $bold;
+          margin-bottom: 16px;
+        }
+
+        p {
+          font-size: $paragraph-small;
+        }
+
+      }
+    }
+
+  }
+
+
+
+  @media screen and (min-width:768px) and (max-width:1439px) {
+    
+    .benefits-bar {
+      color: #fff;
+      background-color: $black-meteora;
+      padding: 32px;
+  
+
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      h4 {
+        font-size: $h2;
+        font-weight: $medium;
+        padding: 0 0 8px 0;
+      }
+      .benefits-bar_container {
+        display: flex;
+        flex-direction: column;
+
+        .benefits-bar_point {
+          margin: 16px 0;
+          width: 100%;
+    
+          display: flex;
+          
+          align-items: center;
+    
+          .benefits-bar_icon{
+            width: 72px;
+            height: 72px;
+            margin: auto 16px ;
+
+          }
+    
+          .benefits-bar_description {
+            margin: 16px auto;
+            width: 70%;
+          }
+    
+          .diamond {
+            background-image: url('../assets/tablet/icones/x-diamond_1.png');
+          }
+    
+          .arrows {
+            background-image: url('../assets/tablet/icones/arrow-repeat_1.png')
+          }
+    
+          .flower {
+            background-image: url('../assets/tablet/icones/flower_1.png')
+          }
+    
+    
+    
+          h6, p {
+            margin: 0;
+          }
+    
+          h6 {
+            font-size: $h6;
+            font-weight: $bold;
+            margin-bottom: 16px;
+          }
+    
+          p {
+            font-size: $paragraph-small;
+          }
+    
+        }
+
+      }
+  
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+
+  @media screen and (min-width:1440px) {
+    
+    .benefits-bar {
+      color: #fff;
+      background-color: $black-meteora;
+      padding: 32px;
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      h4 {
+        font-size: $h2;
+        font-weight: $medium;
+        padding: 0 0 8px 0;
+      }
+
+      .benefits-bar_container {
+        display: flex;
+        flex-direction: row;
+      
+  
+        .benefits-bar_point {
+          margin: 16px 0;
+          width: 100%;
+    
+          display: flex;
+          
+          align-items: center;
+    
+          .benefits-bar_icon{
+            width: 72px;
+            height: 72px;
+            margin: auto 16px ;
+
+          }
+    
+          .benefits-bar_description {
+            margin: 16px auto;
+            width: 70%;
+          }
+    
+          .diamond {
+            background-image: url('../assets/tablet/icones/x-diamond_1.png');
+          }
+    
+          .arrows {
+            background-image: url('../assets/tablet/icones/arrow-repeat_1.png')
+          }
+    
+          .flower {
+            background-image: url('../assets/tablet/icones/flower_1.png')
+          }
+    
+    
+    
+          h6, p {
+            margin: 0;
+          }
+    
+          h6 {
+            font-size: $h6;
+            font-weight: $bold;
+            margin-bottom: 16px;
+          }
+    
+          p {
+            font-size: $paragraph-small;
+          }
+    
+        }
+      }
+  
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+
+}

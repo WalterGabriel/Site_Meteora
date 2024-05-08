@@ -1,0 +1,366 @@
+@import '../abstract/base';
+@import '../abstract/variables';
+
+
+main {
+  .banner {
+    margin-top: 100px;
+  
+    .swiper {
+      z-index: 0;
+      width: 100%;
+      height: auto;
+
+      .swiper-button-next, .swiper-button-prev {
+        display: none;
+        --swiper-navigation-size: 64px;
+        --swiper-navigation-top-offset: 50%;
+        --swiper-navigation-sides-offset: 25px;
+        --swiper-navigation-color: #ffffffba;
+        transition: ease 200ms;
+
+        &:hover {
+          --swiper-navigation-color: #ffffff;
+        }
+      
+      
+      }
+
+      .swiper-pagination {
+        display: none;
+      }
+
+      .swiper-scrollbar{
+        display: block;
+
+        --swiper-scrollbar-border-radius: 0;
+        --swiper-scrollbar-top: auto;
+        --swiper-scrollbar-bottom: 40px;
+        --swiper-scrollbar-left: auto;
+        --swiper-scrollbar-right: 4px;
+        --swiper-scrollbar-sides-offset: 25%;
+        --swiper-scrollbar-bg-color: #ffffff55;
+        --swiper-scrollbar-drag-bg-color: #ffffffc9;
+        --swiper-scrollbar-size: 4px;
+
+      }
+
+
+      .swiper-wrapper {
+
+        .swiper-slide {
+
+          .right, .left {
+            left: auto;
+            right: auto;
+            text-align: center;
+          }
+          .slide_description{
+            position: absolute;
+            box-sizing: border-box;
+
+
+            height: 100%;
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            
+            flex-wrap: nowrap;
+            padding: 14rem 1rem 5rem 0;
+
+            color: white;
+
+            h4 {
+              font-size: $display-4;
+              font-weight: $medium;
+              text-transform: uppercase;
+              margin: 0;
+              padding: 0;
+
+            }
+
+            p {
+              letter-spacing: 0.15em;
+              margin: 8px 0 0 0;
+              padding: 0;
+            }
+
+          }
+
+          .slide_img-bg {
+            height: 415px;
+            max-width: 100%;
+          }
+
+          .slide--1, .slide--2, .slide--3 {
+            background: no-repeat center top;
+            background-size: cover;
+          }
+
+          .slide--1{background-image: url('../assets/mobile/Banner_carousel_1_375.png');
+
+          }
+          .slide--2 {background-image: url('../assets/mobile/Banner_carousel_2_375.png');
+          }
+
+          .slide--3 {background-image: url('../assets/mobile/Banner_carousel_3_375.png');
+          }
+
+        }
+      }
+
+    }
+    
+
+  }
+
+  @media screen and (min-width:768px) and (max-width:1439px){
+    .banner {
+      margin: 0;
+      .swiper {
+        z-index: 0;
+        width: 100%;
+        height: auto;
+  
+        .swiper-button-next, .swiper-button-prev {
+          display: block;
+          --swiper-navigation-size: 24px;
+          --swiper-navigation-top-offset: 50%;
+          --swiper-navigation-sides-offset: 25px;
+          --swiper-navigation-color: #ffffffba;
+          transition: ease 200ms;
+  
+          &:hover {
+            --swiper-navigation-color: #ffffff;
+          }
+        
+        
+        }
+  
+        .swiper-pagination {
+          display: none;
+        }
+  
+        .swiper-scrollbar{
+          display: block;
+  
+          --swiper-scrollbar-border-radius: 0;
+          --swiper-scrollbar-top: auto;
+          --swiper-scrollbar-bottom: 40px;
+          --swiper-scrollbar-left: auto;
+          --swiper-scrollbar-right: 4px;
+          --swiper-scrollbar-sides-offset: 25%;
+          --swiper-scrollbar-bg-color: #ffffff55;
+          --swiper-scrollbar-drag-bg-color: #ffffffc9;
+          --swiper-scrollbar-size: 4px;
+  
+        }
+  
+  
+        .swiper-wrapper {
+  
+          .swiper-slide {            
+            
+            .right{
+              right: 0;
+              text-align: right;
+            }
+            .left{
+              left: 0;
+              text-align: left;
+            }
+            .slide_description {
+              position: absolute;
+              box-sizing: border-box;
+            
+  
+              height: 100%;
+              width: 100%;
+
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              
+              flex-wrap: nowrap;
+
+              padding: 0 4.5rem;
+  
+              color: white;
+  
+              h4 {
+                
+                font-size: $display-4;
+                font-weight: $medium;
+                text-transform: uppercase;
+                margin: 0;
+                padding: 0;
+  
+              }
+  
+              p {
+                
+                letter-spacing: 0.15em;
+                margin: 8px 0 0 0;
+                padding: 0;
+              }
+  
+            }
+  
+            .slide_img-bg {
+              height: 415px;
+              max-width: 100%;
+            }
+
+            .slide--1, .slide--2, .slide--3 {
+              background: no-repeat center top;
+              background-size: cover;
+            }
+  
+            .slide--1{
+              background-image: url('../assets/tablet/Banner_carousel_1_768.png');
+  
+            }
+            .slide--2 {
+              background-image: url('../assets/tablet/Banner_carousel_2_768.png');
+            }
+  
+            .slide--3 {
+              background-image: url('../assets/tablet/Banner_carousel_3_768.png');
+            }
+  
+          }
+        }
+  
+      }
+      
+  
+    }
+  }
+
+
+  @media screen and (min-width:1440px) {
+    .banner {
+      margin: 0;
+      .swiper {
+        z-index: 0;
+        width: 100%;
+        height: auto;
+  
+        .swiper-button-next, .swiper-button-prev {
+          display: block;
+          --swiper-navigation-size: 32px;
+          --swiper-navigation-top-offset: 50%;
+          --swiper-navigation-sides-offset: 75px;
+          --swiper-navigation-color: #ffffffba;
+          transition: ease 200ms;
+  
+          &:hover {
+            --swiper-navigation-color: #ffffff;
+          }
+        
+        
+        }
+  
+        .swiper-pagination {
+          display: none;
+        }
+  
+        .swiper-scrollbar{
+          display: block;
+  
+          --swiper-scrollbar-border-radius: 0;
+          --swiper-scrollbar-top: auto;
+          --swiper-scrollbar-bottom: 40px;
+          --swiper-scrollbar-left: auto;
+          --swiper-scrollbar-right: 4px;
+          --swiper-scrollbar-sides-offset: 40%;
+          --swiper-scrollbar-bg-color: #ffffff55;
+          --swiper-scrollbar-drag-bg-color: #ffffffc9;
+          --swiper-scrollbar-size: 4px;
+  
+        }
+  
+  
+        .swiper-wrapper {
+  
+          .swiper-slide {            
+            
+            .right{
+              right: 0;
+              text-align: right;
+            }
+            .left{
+              left: 0;
+              text-align: left;
+            }
+            .slide_description {
+              position: absolute;
+              box-sizing: border-box;
+            
+  
+              height: 100%;
+              width: 100%;
+
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              
+              flex-wrap: nowrap;
+
+              padding: 0 10rem;
+  
+              color: white;
+  
+              h4 {
+                
+                font-size: $display-3;
+                font-weight: $medium;
+                text-transform: uppercase;
+                margin: 0;
+                padding: 0;
+  
+              }
+  
+              p {
+                font-size: $paragraph-lead;
+                letter-spacing: 0.15em;
+                margin: 8px 0 0 0;
+                padding: 0;
+              }
+  
+            }
+  
+            .slide_img-bg {
+              height: 415px;
+              max-width: 100%;
+            }
+
+            .slide--1, .slide--2, .slide--3 {
+              background: no-repeat center top;
+              background-size: cover;
+            }
+  
+            .slide--1{
+              background-image: url('../assets/desktop/Banner_carousel_1_1440.png');
+  
+            }
+            .slide--2 {
+              background-image: url('../assets/desktop/Banner_carousel_2_1440.png');
+            }
+  
+            .slide--3 {
+              background-image: url('../assets/desktop/Banner_carousel_3_1440.png');
+            }
+  
+          }
+        }
+  
+      }
+      
+  
+    }
+  }
+
+}

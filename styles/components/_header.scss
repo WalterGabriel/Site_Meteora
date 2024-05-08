@@ -1,0 +1,351 @@
+@import '../abstract/variables';
+@import '../abstract/base';
+
+
+header {
+  z-index: 3;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: $black-meteora;
+  
+    //mobile first
+    .header_logo {
+      padding: 23px 0 23px 16px;
+    }
+
+    .header_logo img {
+      height: 24px;
+    }
+
+    .header_search-tool_container {
+      //display: none;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      padding: 1.5rem;
+      box-sizing: border-box;
+      left: 0;
+      top: 73.35px;
+      width: 100%;
+      
+      input {
+        
+        width: 75%;
+        font-size: $paragraph*.8;
+        border-radius: 0;
+        border-color: $black-meteora;
+      
+
+      }
+
+      button {
+        cursor: pointer;
+        width: 20%;
+        padding: 0 .5rem;
+        background-color: transparent;
+        border: 1pt solid $black-meteora;
+
+      &:hover{
+        background-color: $violet-meteora;
+      }
+
+      &:active{
+        background-color: $lemon-meteora;
+      }
+    }
+  }
+
+    .header_hamburguer-menu_button{
+      z-index: 2;
+      letter-spacing: .050rem;
+      cursor: pointer;
+
+      border: none;
+      padding: 1rem 0;
+      margin-right: 1rem;
+      width: 4rem;
+      color: $lemon-meteora;
+      background: transparent;
+    
+
+    }
+    // Modifier
+    nav {display: none;
+    }
+    .header_nav--active {
+      display: block;
+    }
+    .header_nav {
+      .header_hamburguer-menu_list {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        text-align: center;
+        box-sizing: border-box;
+
+    
+        list-style-type: none;
+        padding: 2rem;
+        margin: 0;
+    
+        background-color: $blueich-grey;
+    
+        .header_hamburguer-menu_item{
+          padding: 1.2em 0;
+          border-bottom: 1px solid $grey-meteora;
+    
+          .header_hamburguer-menu_link {
+            color: $grey-meteora;
+            font-weight: $regular;
+
+            display: flex;
+            align-items: center;
+            height: 50px;
+            width: 100%;
+    
+    
+            &:hover {
+              color: $lemon-meteora;
+            }
+    
+            &:active {
+              color: $lemon-meteora;
+              font-weight: $bold;
+            }
+          }
+        } 
+      }
+    }
+  
+
+  @media screen and (min-width: 768px) and (max-width:1439px) {
+    .header_logo {
+      padding: 0 0 0 1rem;
+      align-self:center;
+    }
+
+    .header_logo img {
+      height: 24px;
+    }
+
+
+
+    .header_nav {
+      display: flex;
+      align-items: center;
+
+      .header_hamburguer-menu_list {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: start;
+
+        position: relative;
+        width: 48vw;
+        height: 100%;
+        background-color: transparent;
+        font-size: $paragraph*.9;
+        
+        list-style-type: none;
+        margin: 0 0;
+        padding: 0;
+
+    
+        .header_hamburguer-menu_item{
+          padding: .0 .75rem;
+          border-bottom: none;
+
+          
+          display: flex;
+          align-items: center;
+          height: 100%;
+          
+          
+    
+          .header_hamburguer-menu_link {
+            color: $grey-meteora;
+            font-weight: $regular;
+
+            //Links adaptation height
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            &:hover {
+              color: $lemon-meteora;
+            }
+    
+            &:active {
+              color: $lemon-meteora;
+              font-weight: $bold;
+            }
+          }
+        } 
+      }
+
+    }
+    .header_search-tool_container {
+
+      display: flex;
+      position: relative;
+      left: 0;
+      top:0;
+      width: auto;
+
+
+      flex-wrap: nowrap;
+      align-items: stretch;
+      justify-content: space-between;
+      padding: 0 1rem;
+
+
+      input {
+        padding: 0 1rem;
+        margin: 1rem 0;
+        width: 17vw;
+        font-size: $paragraph*.75;
+
+      }
+
+
+      button {
+        color: $grey-meteora;
+        padding: 0 .5rem;
+        margin: 1rem 0 1rem .5rem;
+        background-color: transparent;
+        border: 1pt solid $grey-meteora;
+
+      &::placeholder {
+        font-size: $paragraph*.75;
+      }
+
+      }
+    }
+
+    .header_hamburguer-menu_button {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .header_logo {
+      padding: 0 0 0 1rem;
+      align-self:center;
+    }
+
+    .header_logo img {
+      height: 32px;
+    }
+
+
+
+    .header_nav {
+      display: flex;
+      align-items: center;
+
+      .header_hamburguer-menu_list {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: start;
+
+        position: relative;
+        width: 48vw;
+        height: 100%;
+        background-color: transparent;
+        font-size: $paragraph;
+        
+        list-style-type: none;
+        margin: 0 0;
+        padding: 0;
+
+    
+        .header_hamburguer-menu_item{
+          padding: .0 .75rem;
+          border-bottom: none;
+
+          
+          display: flex;
+          align-items: center;
+          height: 100%;
+          
+          
+    
+          .header_hamburguer-menu_link {
+            color: $grey-meteora;
+            font-weight: $regular;
+
+            //Links adaptation height
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            &:hover {
+              color: $lemon-meteora;
+            }
+    
+            &:active {
+              color: $lemon-meteora;
+              font-weight: $bold;
+            }
+          }
+        } 
+      }
+
+    }
+    .header_search-tool_container {
+      display: flex;
+      position: relative;
+      left: 0;
+      top:0;
+      width: auto;
+
+
+      flex-wrap: nowrap;
+      align-items: stretch;
+      justify-content: space-between;
+      padding: 0 1rem;
+
+
+      input {
+        
+        padding: 0 1rem;
+        margin: 1rem 0;
+        width: 25vw;
+        font-size: $paragraph;
+        text-align: center;
+
+      }
+
+
+      button {
+        color: $grey-meteora;
+        padding: 0 .5rem;
+        margin: 1rem 0 1rem .5rem;
+        background-color: transparent;
+        border: 1pt solid $grey-meteora;
+
+      &::placeholder {
+        font-size: $paragraph;
+      }
+
+      }
+    }
+
+    .header_hamburguer-menu_button {
+      display: none;
+    }
+  }
+
+}
